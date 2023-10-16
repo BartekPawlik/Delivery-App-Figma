@@ -1,0 +1,129 @@
+@media only screen and (max-width: 600px) {
+   *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   }
+   :root{
+
+   --text-primaty_color: #2D0C57;
+   --text-secondary_color: #9586A8;
+}
+   body{
+    width: 100%;
+    height: 100vh;
+   }
+   section{
+    width: 100%;
+    height: 100vh;
+   }
+
+   .splashScreen-container{
+    width: 100%;
+    height: 896px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #A259FF;
+
+    .elips{
+        position: absolute;
+        right: 0;
+    }
+    .elips_2{
+        position: absolute;
+        right: 0;
+        top: -160px;
+    }
+    .elips_3{
+        position: absolute;
+      right: 0px;
+    }
+    .background-container{
+        flex: 1;
+        background-color: #A259FF;
+        position: relative;
+        overflow: hidden;
+        .logo-container{
+            position: absolute;
+            background-color: #CDFFB6;
+            width: 63px;
+            height: 63px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 20px;
+            top: 63px;
+            h2{
+                color: #A259FF;
+                font-size: 25px;
+            }
+        }
+    }
+    .newContact-container{
+        flex: 2;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: start;
+        background-color: #F6F5F5;
+        border-radius: 13px 13px 0 0 ;
+
+         .icon-container{
+            margin-top: 80px;
+            width: 104px;
+            height: 104px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            border-radius: 50%;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+         }
+         .title{
+            margin-top: 18px;
+            text-align: center;
+            font-family: sans-serif;
+            color: var(--text-primaty_color);
+         }
+         .desc{
+            width: 90%;
+            margin-top: 20px;
+            color: var(--text-secondary_color);
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 15px;
+            line-height: 20px;
+
+         }
+        .order{
+            margin-top: 50px;
+            width: 354px;
+            height: 54px;
+           background-color: #0BCE83;
+           outline: none;
+           border: none;
+           cursor: pointer;
+           color: white;
+           border-radius: 10px;
+           a{
+            text-decoration: none;
+            color: white;
+           }
+        }
+        .dismiss{
+            margin-top: 34px;
+            background-color: white;
+            border: none;
+            color: var(--text-secondary_color);
+            cursor: pointer;
+        }
+    }
+   }
+
+   
+  }
