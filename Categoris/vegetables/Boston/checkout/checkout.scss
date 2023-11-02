@@ -22,62 +22,349 @@ body {
 section {
     width: 100%;
     height: 100vh;
-}  
+}
 
-.title{
+.title {
     display: flex;
     justify-content: center;
     align-items: end;
     position: relative;
     background-color: #F6F5F5;
     height: 80px;
-    box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.1);
 
-    .back-container{
+    .back-container {
         position: absolute;
         left: 20px;
         bottom: 20px;
     }
-    h2{
+
+    h2 {
         font-size: 1rem;
         margin-bottom: 15px;
         color: var(--text-primaty_color);
     }
 }
 
-.checkout-container{
+.checkout-container {
     width: 90%;
-    margin: 0 auto ;
+    margin: 0 auto;
     margin-top: 20px;
-    .payment-container{
-        .pay-title{
+
+    .payment-container {
+        .pay-title {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            h2{
+
+            h2 {
                 font-size: 1.2rem;
                 color: var(--text-primaty_color);
             }
-            p{
+
+            p {
                 font-weight: 600;
                 color: var(--selected-violet_color);
                 font-size: 0.9rem;
                 cursor: pointer;
             }
         }
-        .card-number{
+
+        .card-number {
             margin-top: 22px;
             display: flex;
-            img{
+
+            img {
                 margin-right: 20px;
             }
-            p{
+
+            p {
                 color: var(--text-secondary_color);
             }
 
         }
     }
-    .delivery-container{
-        
+
+    .delivery-contanier {
+        margin-top: 30px;
+
+        .delivery-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h2 {
+                font-size: 1.2rem;
+                color: var(--text-primaty_color);
+            }
+
+            p {
+                font-weight: 600;
+                color: var(--selected-violet_color);
+                font-size: 0.9rem;
+                cursor: pointer;
+            }
+        }
+
+        .location {
+            margin-top: 25px;
+            display: flex;
+
+            ul {
+                margin-left: 14px;
+
+                li {
+                    color: var(--text-secondary_color);
+                    list-style: none;
+                    font-size: 0.9rem;
+                    line-height: 20px;
+
+                }
+            }
+        }
+        .opction-container{
+            margin-top: 30px;
+            .opction-title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                h2 {
+                    font-size: 1.2rem;
+                    color: var(--text-primaty_color);
+                }
+    
+                p {
+                    font-weight: 600;
+                    color: var(--selected-violet_color);
+                    font-size: 0.9rem;
+                    cursor: pointer;
+                }
+            }
+            .choose-option{
+                margin-top: 15px;
+                .opction{                
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 25px;
+                        justify-content: space-between;
+
+                    .container{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            margin-right: 20px;
+                        }
+                        p{
+                            color: var(--text-secondary_color);
+                         
+                        }
+                        .pick{
+                            color: var(--selected-violet_color);
+                            font-weight: 600;
+                          
+                        }
+                    }
+                   
+                }
+            }
+            .non-contact-container{
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                h2{
+                    font-size: 1.2rem;
+                     color: var(--text-primaty_color);
+
+                }
+                .toggle-button-cover {
+                    display: table-cell;
+                    position: relative;
+                    width: 100px;
+                    height: 40px;
+                    box-sizing: border-box;
+                  }
+                  
+                  .button-cover {      
+                   border-radius: 4px;
+                  }
+                  
+                  .button-cover:before {
+                    counter-increment: button-counter;
+                    content: counter(button-counter);
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    color: #d7e3e3;
+                    font-size: 12px;
+                    line-height: 1;
+                    padding: 5px;
+                  }
+                  
+                  .button-cover,
+                  .knobs,
+                  .layer {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                  }
+                  
+                  .button {
+                    position: relative;
+                    top: 50%;
+                    width: 74px;
+                    height: 36px;
+                    margin: -20px auto 0 auto;
+                    overflow: hidden;
+                  }
+                  
+                  .button.r,
+                  .button.r .layer {
+                    border-radius: 100px;
+                  }
+                  
+                  .button.b2 {
+                    border-radius: 2px;
+                  }
+                  
+                  .checkbox {
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                    opacity: 0;
+                    cursor: pointer;
+                    z-index: 3;
+                  }
+                  
+                  .knobs {
+                    z-index: 2;
+                  }
+                  
+                  .layer {
+                    border-radius: 10px;
+                    width: 100%;
+                    background-color: #E2CBFF;
+                    transition: 0.3s ease all;
+                    z-index: 1;
+                  }
+                  /* Button 12 */
+#button-12 .knobs:before,
+#button-12 .knobs:after,
+#button-12 .knobs span,
+#button-12 .knobs span:before,
+#button-12 .knobs span:after {
+  position: absolute;
+  top: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+}
+
+#button-12 .knobs:before {
+  content: "YES";
+  left: 4px;
+}
+
+#button-12 .knobs:after {
+  content: "NO";
+  right: 4px;
+}
+
+#button-12 .knobs:before,
+#button-12 .knobs:after {
+  width: 27px;
+  height: 10px;
+  color: var(--selected-violet_color);
+  padding: 9px 3px;
+  z-index: 1;
+}
+
+#button-12 .knobs span {
+  display: inline-block;
+  z-index: 2;
+}
+
+#button-12 .knobs span,
+#button-12 .knobs span:before,
+#button-12 .knobs span:after {
+  width: 20px;
+  height: 10px;
+  padding: 9px 4px;
+}
+
+#button-12 .knobs span:before,
+#button-12 .knobs span:after {
+  content: "";
+  top: 0;
+}
+
+#button-12 .knobs span:before {
+  left: -28px;
+  background-color: #ffffff;
+}
+
+#button-12 .knobs span:after {
+  right: -52px;
+  background-color: #ffffff;
+}
+
+#button-12 .checkbox:checked + .knobs span:before {
+  left: 4px;
+}
+
+#button-12 .checkbox:checked + .knobs span:after {
+  right: -83px;
+}
+
+#button-12 .checkbox:checked ~ .layer {
+  background-color: #E2CBFF;
+}
+                  
+               
+            }
+        }
+
     }
+}
+
+.shopPanel-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 50px;
+    z-index: 100;
+
+    img {
+        cursor: pointer;
+    }
+    .box{
+      position: relative;
+      .product-value{
+        padding: 2px 5px;
+        border-radius: 50%;
+        background-color:#CBF265;
+        position: absolute;
+        right: -4px;
+        bottom: 17px;
+        p{
+          font-size: 0.7rem;
+        }
+      }
+    }
+
+
+
+
 }
