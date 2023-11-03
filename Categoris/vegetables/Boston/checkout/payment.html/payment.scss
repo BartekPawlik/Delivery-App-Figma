@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+
+    --text-primaty_color: #2D0C57;
+    --text-secondary_color: #9586A8;
+    --selected-violet_color: #7203FF;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #F6F5F5;
+
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+.back-container {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+}
+
+.payment-container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+ 
+    .title-container{
+        margin-top: 70px;
+        color: var(--text-primaty_color);
+        margin-bottom: 30px;
+    }
+    .creditCard-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        position: relative;
+
+        .base-container{
+            width: 100%;
+
+            .base{
+                height: 170px;
+                border-radius: 5px;
+            }
+          
+        }
+        .info-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            width: 90%;
+            top: 60px;
+            
+            .number-card{
+                margin-bottom: 45px;
+                h3{
+                    color: white;
+                    font-size: 1.1rem;
+                    font-weight: 100;
+                    word-spacing: 10px;
+                    
+                    
+                    
+                }
+             
+            }
+            .number-name{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                h3{
+                    font-size: 0.9rem;
+                    color: white;
+                    font-weight: 200;
+                }
+                p{
+                    font-size: 0.9rem;
+                    color: white;
+                }
+            }
+        }
+        .elipse-container{
+            display: flex;
+            position: absolute;
+            right: 130px;
+            bottom: -40px;
+            
+        }
+        .mc-symbol-container{
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            img{
+                height: 30px;
+            }
+        }
+    
+
+    }
+    .photo-icon-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .card-input-container{
+        width: 100%;
+        form{
+            position: relative;
+            label{
+                margin-left: 7px;
+                font-size: 0.7rem;
+                color: var(--text-secondary_color);
+                
+                
+            }
+            input{
+                width: 100%;
+                height: 33px;
+                padding: 10px;
+                border: 1px solid rgb(207, 199, 199);
+                border-radius: 3px;
+                margin-bottom: 20px;
+                outline: none;
+            }
+
+                img{
+                    position: absolute;
+                    height: 15px;
+                    bottom: 28px;
+                    right: 10px;
+                   
+                }
+               
+         
+        }
+        .card-numbers{
+            display: flex;
+            justify-content: space-between;
+           form{
+            width: 130px;
+           }
+
+        }
+    }
+    .use-card-container{
+        margin-top: 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+       a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+       }
+            button{
+                font-size: 0.7rem;
+                width: 90%;
+                height: 45px;
+                background-color: #0ACF83;
+                color: white;
+                border: none;
+                border-radius: 6px;
+            }
+       
+    
+    }
+    
+}
